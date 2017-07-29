@@ -1,4 +1,7 @@
 # razerblade2017linux
+
+* This document assumes that you have some working linux knowledge and know how not to wipe your Windows partition when selecting your dual boot options during the prep of the linux disk.  Use at your own risk. :)
+
 Useful info from my experience installing Bodhi Linux on a Razer Blade 2017 model. Geared towards deep learning / rnn usage.
 
 The latest release of Bodhi (as of July 2017) is built on Ubuntu 16.04.  It features Moshka as its window manager, which is a fork of Enlightenment E17.  It’s super lightweight and perfect if you are dual booting and want a fast window manager that is going to go easy on your CPU/GPU. 
@@ -6,7 +9,6 @@ The latest release of Bodhi (as of July 2017) is built on Ubuntu 16.04.  It feat
 Resize your existing Windows partition in Disk Management and allocate as much space as you’d like to give it.  Remember that the Nvidia drivers always seem to take up more room than they should.
 
 The installation of Bodhi is straightforward.  Download the ISO from  http://www.bodhilinux.com and make a bootable flash drive from it.
-This document assumes that you have some working linux knowledge and know how not to wipe your Windows partition when selecting your dual boot options during the prep of the linux disk.  Use at your own risk. :)
 
 Nvidia drivers:
 Run lspci to make sure it sees both the Intel and Nvidia card.  
