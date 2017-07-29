@@ -17,7 +17,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 
 sudo apt update && sudo apt install nvidia-381
 
-Sudo apt-get install nvidia-modprobe
+sudo apt-get install nvidia-modprobe
 #
 
 Run glxinfo | grep “OpenGL renderer” to make sure it’s seeing your card.
