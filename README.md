@@ -14,7 +14,9 @@ Nvidia drivers:
 Run lspci to make sure it sees both the Intel and Nvidia card.  
 #
 sudo add-apt-repository ppa:graphics-drivers/ppa
+
 sudo apt update && sudo apt install nvidia-381
+
 Sudo apt-get install nvidia-modprobe
 #
 
@@ -31,7 +33,9 @@ Install docker-ce first as nvidia-docker depends on docker engine.
 #
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
 sudo apt-get update
+
 sudo apt-get install docker-ce
 #
 
