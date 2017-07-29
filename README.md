@@ -12,9 +12,11 @@ The installation of Bodhi is straightforward.  Download the ISO from  http://www
 
 Nvidia drivers:
 Run lspci to make sure it sees both the Intel and Nvidia card.  
+#
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update && sudo apt install nvidia-381
 Sudo apt-get install nvidia-modprobe
+#
 
 Run glxinfo | grep “OpenGL renderer” to make sure it’s seeing your card.
 
@@ -24,27 +26,30 @@ Reboot
 
 You are now ready to install docker-ce and nvidia-docker for torch-rnn
 
-Install docker-ce first as nvidia-docker depends on docker engine.  First, add the key.
+Install docker-ce first as nvidia-docker depends on docker engine. 
 
+#
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install docker-ce
+#
 
 Install nvidia-docker
-
+#
 wget -P /tmp https://github.com/NVIDIA/nvidia-docker/releases/download/v1.0.1/nvidia-docker_1.0.1-1_amd64.deb
 sudo dpkg -i /tmp/nvidia-docker*.deb && rm /tmp/nvidia-docker*.deb
-
+#
 
 And then test it by trying to run nvidia-smi in a container
+#
 nvidia-docker run --rm nvidia/cuda nvidia-smi
+#
 
 Pull the cuda8 torch-rnn docker image from xoryouyou/torch-rnn
 
 
-Additional stuff for Razer:
+* Additional stuff for Razer:
 
 Razerutils and Polychromatic -
 #
@@ -61,7 +66,7 @@ sudo apt update
 sudo apt install polychromatic
 #
 
-Disable touchpad when typing 
-#
+Disable touchpad when typing:
+
 https://github.com/rolandguelle/razer-blade-stealth-linux/blob/master/etc/X11/xorg.conf.d/50-synaptics.conf
-#
+
