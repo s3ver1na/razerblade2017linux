@@ -28,7 +28,7 @@ Install docker-ce first as nvidia-docker depends on docker engine.  First, add t
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get install docker-ce
 
@@ -47,7 +47,7 @@ Pull the cuda8 torch-rnn docker image from xoryouyou/torch-rnn
 Additional stuff for Razer:
 
 Razerutils and Polychromatic -
-
+#
 sudo add-apt-repository ppa:terrz/razerutils
 
 sudo apt update
@@ -59,7 +59,9 @@ sudo add-apt-repository ppa:lah7/polychromatic
 sudo apt update
 
 sudo apt install polychromatic
+#
 
 Disable touchpad when typing 
+#
 https://github.com/rolandguelle/razer-blade-stealth-linux/blob/master/etc/X11/xorg.conf.d/50-synaptics.conf
-
+#
