@@ -45,12 +45,19 @@ Pull the cuda8 torch-rnn docker image from xoryouyou/torch-rnn
 Additional stuff for Razer:
 
 Razerutils and Polychromatic -
+
 sudo add-apt-repository ppa:terrz/razerutils
+
 sudo apt update
+
 sudo apt install python3-razer razer-kernel-modules-dkms razer-daemon razer-doc
+
 sudo add-apt-repository ppa:lah7/polychromatic
+
 sudo apt update
+
 sudo apt install polychromatic
+
 Disable touchpad when typing 
 https://github.com/rolandguelle/razer-blade-stealth-linux/blob/master/etc/X11/xorg.conf.d/50-synaptics.conf
 
